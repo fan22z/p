@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project TIK</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(img/-Gunung-Pinang-e1612920937813.webp); /* Ganti dengan path gambar Anda */
+            background-size: cover; /* Menyesuaikan gambar ke seluruh layar */
+            background-position: center; /* Posisi gambar di tengah */
+            background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+            color: #333; /* Warna teks agar terlihat jelas */
+        }
+        header {
+            padding: 10px 0;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan */
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            background-color: rgba(68, 68, 68, 0.8); /* Latar belakang semi-transparan */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan */
+            margin: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* Latar belakang semi-transparan */
+            color: rgb(255, 242, 242);
+            text-align: center;
+            padding: 1px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: slideUp 1s ease-in-out;
+        }
+        img {
+            transition: transform 0.5s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Animasi Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        /* Animasi pada gambar dokumentasi */
+        .documentation-img {
+            animation: zoomIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>PROGRAM DEFORESTASI</h1>
+    </header>
+
+    <nav>
+        <a href="#home">TEKS WAWANCARA</a>
+        <a href="#about">DOKUMENTASI</a>
+        <a href="#contact">KELOMPOK</a>
+    </nav>
+
+    <main>
+        <h2 id="home">Teks Wawancara</h2>
+        <p>Seberapa besar pengaruh Gunung Pinang terhadap kehidupan masyarakat sekitar? Apakah ada tradisi atau kepercayaan lokal yang terkait dengan Gunung Pinang? Bagaimana masyarakat di sini berkontribusi untuk menjaga kelestarian hutan di Gunung Pinang? Apakah Anda pernah melihat dampak buruk seperti perusakan hutan di kawasan ini? Bagaimana wisata di Gunung Pinang membantu ekonomi masyarakat lokal?</p>
+
+        <h2 id="about">Dokumentasi</h2>
+        <img src="img/dokumentasi.jpeg" height="300px" title="Dokumentasi Hasil" class="documentation-img">
+
+        <h2 id="contact">Kelompok</h2>
+        <p>1. Arfa Indriyanti: pembuat laporan, perancang visual</p>
+        <p>2. Fandi Alibet: programer, projek manajer</p>
+        <p>3. Nur Afika: pembuat laporan, perancang visual</p>
+        <p>4. Siti Masitoh: pencari data, dokumentasi</p>
+        <p>5. Ulin Na'mah: pencari data, dokumentasi</p>
+        
+    </main>
+
+    <footer>
+        <p>&copy; dibuat oleh fandi</p>
+    </footer>
+
+</body>
+</html>
